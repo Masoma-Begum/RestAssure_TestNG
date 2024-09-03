@@ -60,15 +60,19 @@ public class Get {
 //	    .param(page, 2)
 	   	.get("https://reqres.in/api/users?page=2").
 	   	
-	   then()
+	   .then()
 	   .statusCode(200)
-	   .body("data.id[0]", equalTo(7))// If put another number instead of 7 get an exception
+	   .body("data.id[0]", equalTo(7))// If put another number instead of 7 get an exception 
 	   .body("data.first_name", hasItems("Michael","Lindsay"))
 	   //.body("data.last_name",instanceOf(String.class))
 	   //.body("data.id", instanceOf(Integer.class))
 	   .body("data.id", not(instanceOf(String.class)))
 	  
 	   .log().all();
+	   //.log().body(); // Will print only response body
+	  // .log().cookies(); // will print only response cookies
+	   	   
+	   
 	   	
    }
 }
