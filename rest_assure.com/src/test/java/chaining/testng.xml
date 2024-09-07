@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Test -->
+<suite name="API chain" guice-stage="DEVELOPMENT">
+  <test thread-count="0" name="Test">
+    <classes>
+    <class name="chaining.CreateUser"/>
+    <class name="chaining.GetUser"/>
+      <class name="chaining.UpdatUser"/>
+      <class name="chaining.DeleteUser"/>
+
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
