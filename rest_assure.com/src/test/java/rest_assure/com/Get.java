@@ -58,7 +58,7 @@ public class Get {
 	   given()
 //	    .header("Content", "application/json")
 //	    .param(page, 2)
-	   	.get("https://reqres.in/api/users?page=2").
+	   	.get("https://reqres.in/api/users?page=2")
 	   	
 	   .then()
 	   .statusCode(200)
